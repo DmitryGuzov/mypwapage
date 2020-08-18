@@ -34,11 +34,6 @@
             "type": "image/png"
         },
         {
-            "src": "/image/150x150.png",
-            "sizes": "150x150",
-            "type": "image/png"
-        },
-        {
             "src": "/image/88x88.png",
             "sizes": "88x88",
             "type": "image/png"
