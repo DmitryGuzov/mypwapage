@@ -12,13 +12,7 @@
     "orientation": "any",
     "related_applications": [],
     "prefer_related_applications": false,
-    "icons": [
-        {
-            "src": "./image/300x300.png",
-            "type": "image/png",
-            "sizes": "300x300"
-        }
-    ],
+    "icons": [],
     "url": "https://raisky.github.io/mypwapage/index-english.html",
     "screenshots": []
 }
