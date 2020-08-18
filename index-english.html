@@ -2,10 +2,7 @@
 <html lang="en">
 
 <head>
-    <script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
-></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
     <link rel='manifest' href='./manifest.json'>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157942346-1"></script>
@@ -15,22 +12,22 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-157942346-1');
-    </script>      
-   <script>
-    if (navigator.serviceWorker.controller) {
-        console.log('[PWA Builder] active service worker found, no need to register')
-    } else {
-        navigator.serviceWorker.register('pwabuilder-sw.js', {
-            scope: './'
-        }).then(function (reg) {
-            console.log('Service worker has been registered for scope:' + reg.scope);
-        });
-    }
-</script>
+    </script>
+    <script>
+        if (navigator.serviceWorker.controller) {
+            console.log('[PWA Builder] active service worker found, no need to register')
+        } else {
+            navigator.serviceWorker.register('pwabuilder-sw.js', {
+                scope: './'
+            }).then(function (reg) {
+                console.log('Service worker has been registered for scope:' + reg.scope);
+            });
+        }
+    </script>
     <meta charset="UTF-8">
     <title>Front-End Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet prefetch'
         href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
@@ -70,7 +67,7 @@
         <div id="hero-section">
             <div class="wrapper">
                 <div class="left-side">
-                    <h3>Dmitry Guzov<span class="dott">.</span></h3>                    
+                    <h3>Dmitry Guzov<span class="dott">.</span></h3>
                     <p>
                         I am an open person. I like implement ideas and participate in what I do.
                         I like to solve problems, create and use smart algorithms.
@@ -100,7 +97,7 @@
                     </div>
                     <a class=" btn btn-download" href="CV/DmytroHuzov_FrontEnd.pdf" download="DmytroHuzov_FrontEnd.pdf"
                         target="_blank">DOWNLOAD CV</a>
-                        <a class=" btn btn-download" onclick="install()">Установка</a>
+                    <a class=" btn btn-download" onclick="openPrompt()">Установка</a>
                 </div>
                 <div class="right-side">
                     <span></span>
