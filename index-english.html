@@ -10,9 +10,9 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-157942346-1');
-    </script>  
-    <script>
-        if ('serviceWorker' in navigator) {
+    </script>      
+    <script src="./serviceWorker1/pwabuilder-sw.js">
+      if ('serviceWorker' in navigator) {
     // Весь код регистрации у нас асинхронный.
     navigator.serviceWorker.register('./serviceWorker1/pwabuilder-sw.js')
       .then(() => navigator.serviceWorker.ready.then((worker) => {
@@ -20,8 +20,7 @@
       }))
       .catch((err) => console.log(err));
 }
-    </script>
-    <script src="./serviceWorker1/pwabuilder-sw.js"></script>
+</script>
     <meta charset="UTF-8">
     <title>Front-End Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
