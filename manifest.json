@@ -42,32 +42,6 @@
             "src": "/image/50x50.png",
             "sizes": "50x50",
             "type": "image/png"
-        },      
-        {
-            "src": "/image/192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        
-        {
-            "src": "/image/96x96.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        },
-        {
-            "src": "/image/72x72.png",
-            "sizes": "72x72",
-            "type": "image/png"
-        },
-        {
-            "src": "/image/36x36.png",
-            "sizes": "36x36",
-            "type": "image/png"
-        },      
-        {
-            "src": "/image/180x180.png",
-            "sizes": "180x180",
-            "type": "image/png"
         }
     ],
     "url": "https://raisky.github.io/mypwapage/index-english.html",
