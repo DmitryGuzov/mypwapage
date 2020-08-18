@@ -2,22 +2,10 @@
 <html lang="en">
 
 <head>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall">
-    let buttonInstall = document.getElementById('install-button');
-    buttonInstall.addEventListener('click', (e) => {
-  // Hide the app provided install promotion
-  hideMyInstallPromotion();
-  // Show the install prompt
-  deferredPrompt.prompt();
-  // Wait for the user to respond to the prompt
-  deferredPrompt.userChoice.then((choiceResult) => {
-    if (choiceResult.outcome === 'accepted') {
-      console.log('User accepted the install prompt');
-    } else {
-      console.log('User dismissed the install prompt');
-    }
-  });
-});</script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall@latest/dist/pwa-install.min.js"></script>
+
     <link rel='manifest' href='./manifest.json'>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157942346-1"></script>
@@ -112,7 +100,7 @@
                     </div>
                     <a class=" btn btn-download" href="CV/DmytroHuzov_FrontEnd.pdf" download="DmytroHuzov_FrontEnd.pdf"
                         target="_blank">DOWNLOAD CV</a>
-                    <a class=" btn btn-download" id="install-button">Установка</a>
+                    <a class=" btn btn-download" onclick="openPrompt()">Установка</a>
                 </div>
                 <div class="right-side">
                     <span></span>
