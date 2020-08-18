@@ -4,16 +4,7 @@
 <head>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall@latest/dist/pwa-install.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>    
-    <link rel='manifest' href='./manifest.json'>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157942346-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-157942346-1');
-    </script>
+    <link rel='manifest' href='./manifest.json'>        
     <script>
         if (navigator.serviceWorker.controller) {
             console.log('[PWA Builder] active service worker found, no need to register')
