@@ -64,7 +64,7 @@
             "type": "image/png"
         },
         {
-            "src": "/image/144x144.png",
+            "src": "./image/144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },
